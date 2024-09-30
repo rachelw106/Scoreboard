@@ -17,5 +17,14 @@ public class Scoreboard
     {
         return teamOneScore + "-" + teamTwoScore + "-" + activeTeam;
     }
+
+    public void recordPlay(int score)
+    {
+        if(score < 1) activeTeam = teamTwo;
+        else
+        {
+            teamOneScore = teamOneScore + score;
+        }
+    }
     
 }
